@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notícias - Sistema de Monitoramento</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="header-top">
+      <div class="logo-container">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="rgba(255,255,255,0.1)"/>
+          <circle cx="12" cy="10" r="3" fill="white"/>
+        </svg>
+        <img src="Imagens/Gemini_Generated_Image_usannmusannmusan-Photoroom(1).png" width="120px" height="120px" alt="Logo">
+      </div>
+      <div class="account-menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+        <span>Conta</span>
+      </div>
+    </div>
+    
+    <nav class="nav-menu">
+      <a href="index.html">Home</a> <span class="nav-separator">|</span>
+      <a href="#">Alertas</a> <span class="nav-separator">|</span>
+      <a href="" class="active-nav">Notícias</a> <span class="nav-separator">|</span>
+      <a href="#">Sobre</a> <span class="nav-separator">|</span>
+      <a href="#">Contato</a> <span class="nav-separator">|</span>
+      <a href="#">Preferências</a>
+    </nav>
+  </header>
+
+  <main class="dashboard-container">
+    <div class="main-card">
+      
+      <div class="news-header">
+        <h1 class="news-page-title">Últimas Notícias</h1>
+        <p class="news-page-subtitle">Acompanhe avisos oficiais e relatórios meteorológicos.</p>
+      </div>
+
+      <section class="news-grid-blocks">
+        
+        <article class="news-block-item">
+          <div class="block-img-container">
+            <img src="https://images.unsplash.com/photo-1547683905-f686c993aae5?auto=format&fit=crop&w=500&q=80" alt="Chuva Forte">
+          </div>
+          <div class="block-body">
+            <span class="news-tag tag-danger">Alerta</span>
+            <h3 class="block-title">Defesa Civil emite alerta máximo para áreas de risco na região</h3>
+            <p class="block-excerpt">Solo atingiu níveis críticos de saturação devido ao acumulado de chuva nas últimas 24 horas.</p>
+            <a href="#" class="block-link">Ler notícia completa →</a>
+          </div>
+        </article>
+
+        <article class="news-block-item">
+          <div class="block-img-container">
+            <img src="https://images.unsplash.com/photo-1516912481808-340ea1b1ee8b?auto=format&fit=crop&w=500&q=80" alt="Previsão">
+          </div>
+          <div class="block-body">
+            <span class="news-tag tag-warning">Previsão</span>
+            <h3 class="block-title">Frente fria avança e muda o tempo a partir de quinta-feira</h3>
+            <p class="block-excerpt">Modelos meteorológicos indicam fortes rajadas de vento e queda acentuada na temperatura.</p>
+            <a href="#" class="block-link">Ler notícia completa →</a>
+          </div>
+        </article>
+
+        <article class="news-block-item">
+          <div class="block-img-container">
+            <img src="https://images.unsplash.com/photo-1590055531615-f16d36fed8f4?auto=format&fit=crop&w=500&q=80" alt="Infraestrutura">
+          </div>
+          <div class="block-body">
+            <span class="news-tag tag-success">Obras</span>
+            <h3 class="block-title">Novas obras de drenagem reduzem pontos de alagamento estruturais</h3>
+            <p class="block-excerpt">Intervenções realizadas prometem melhorar o escoamento de água em vias principais.</p>
+            <a href="#" class="block-link">Ler notícia completa →</a>
+          </div>
+        </article>
+
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-left">© 2026 Sistema de Monitoramento</div>
+    <div class="footer-right">
+      <div class="social-icons">
+        <svg width="18" height="18" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+        <svg width="18" height="18" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/></svg>
+      </div>
+      <span class="nav-separator">|</span>
+      <a href="#" class="legal-link">Legal</a>
+      <span class="nav-separator">|</span>
+      <span class="metadata">15:29:27, 10 de Junho, 2026 | São Paulo, BR</span>
+    </div>
+  </footer>
+
+</body>
+</html>
